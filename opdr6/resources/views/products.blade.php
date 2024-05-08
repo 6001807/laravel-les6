@@ -13,7 +13,7 @@
         <p>{{ $product->quantity }}</p>
         <p>{{ $product->price }}</p>
         <p>{{ $product->description }}</p>
-        <a href="{{ $product->code }}">Link to product</a>
+        <a href="{{ $product->id }}">Link to product</a>
     @endforeach  
 </body>
 </html>

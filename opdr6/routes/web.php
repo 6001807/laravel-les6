@@ -15,5 +15,5 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-Route::resource('/', ProductController::class);
-Route::resource('/{id}', ProductController::class);
+Route::get('/', [ProductController::class, 'index']);
+Route::get('/{id}', [ProductController::class, 'show']);
